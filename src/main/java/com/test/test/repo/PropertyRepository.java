@@ -12,7 +12,7 @@ import com.test.test.entity.Property;
 @Repository
 public interface PropertyRepository extends JpaRepository<Property, Long> {
 
-	Optional<Property> findByUserId(Long userId);
+	Optional<Property> findByOwner_Id(Long userId);
 
 	@Query("SELECT p FROM Property p WHERE p.isActive = true")
     List<Property> findAllActive();

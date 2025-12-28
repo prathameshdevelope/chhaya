@@ -21,7 +21,7 @@ import com.test.test.service.IPropertyService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/chhaya/property")
+@RequestMapping("/api/chhaya/property")
 public class PropertyController {
 	
 	   private IPropertyService propertyService;

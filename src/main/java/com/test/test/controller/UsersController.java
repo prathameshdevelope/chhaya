@@ -20,7 +20,7 @@ import com.test.test.dto.verifyOtpDto;
 import com.test.test.service.IUsersService;
 
 @RestController
-@RequestMapping("/chhaya/user")
+@RequestMapping("/api/chhaya/user")
 public class UsersController {
 	
 	private final IUsersService appService;

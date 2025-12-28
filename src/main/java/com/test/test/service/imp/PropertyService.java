@@ -77,7 +77,7 @@ public class PropertyService implements IPropertyService{
 
 		checkVerifiedOwner(owner.getRole(),owner.getIsVerified(),owner.getIsActive());
 		return mapToResponse(
-				propertyRepo.findByUserId(userId)
+				propertyRepo.findByOwner_Id(userId)
 				.orElseThrow(() -> new RuntimeException("Property not found"))
 				);
 	}
