@@ -23,7 +23,7 @@ public class SecurityConfig {
 	        http
 	            .csrf(csrf -> csrf.disable()) 
 	            .authorizeHttpRequests(auth -> auth
-	                .requestMatchers("/chhaya/user/signup","/chhaya/user/login","/chhaya/user/send-otp","/chhaya/user/verify-otp","/chhaya/user/user/{id}","/test").permitAll() 
+	                .requestMatchers("/chhaya/user/signup","/swagger-ui/**","/v3/api-docs/**","/swagger-ui.html","/chhaya/user/login","/chhaya/user/send-otp","/chhaya/user/verify-otp","/chhaya/user/user/{id}","/test").permitAll() 
 	                .anyRequest().authenticated()
 	            )
 	            .formLogin(form -> form.disable())
